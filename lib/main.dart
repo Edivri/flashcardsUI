@@ -19,8 +19,7 @@ class _MyAppState extends State<MyApp> {
         answer: "Dart"),
     Flashcard(question: "Who you gonna call?", answer: "Batman!"),
     Flashcard(
-        question: "Who writes the best code?",
-        answer: "Ya boi Za Proqrammer!")
+        question: "Who writes the best code?", answer: "Ya boi Za Proqrammer!")
   ];
 
   int _currentIndex = 0;
@@ -30,6 +29,9 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        appBar: AppBar(
+          title: Text('Flashcard'),
+        ),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
