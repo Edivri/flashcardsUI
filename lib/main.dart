@@ -15,11 +15,11 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   List<Flashcard> _flashcards = [
     Flashcard(
-        question: "What programming language does Flutter use?",
-        answer: "Dart"),
-    Flashcard(question: "Who you gonna call?", answer: "Batman!"),
+        question: "The AppBar BackgroundColor?",
+        answer: "Teal"),
+    Flashcard(question: "Bat-signal is for?", answer: "Batman🦇!"),
     Flashcard(
-        question: "Who writes the best code?", answer: "Ya boi Za Proqrammer!")
+        question: "Who writes the best code?", answer: "Ya boi Za Proqrammer!👨🏽‍💻")
   ];
 
   int _currentIndex = 0;
@@ -31,6 +31,7 @@ class _MyAppState extends State<MyApp> {
       home: Scaffold(
         appBar: AppBar(
           title: Text('Flashcard'),
+          backgroundColor: Colors.teal,
         ),
         body: Center(
           child: Column(
