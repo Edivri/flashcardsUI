@@ -56,7 +56,8 @@ class _MyAppState extends State<MyApp> {
                   OutlineButton.icon(
                       onPressed: showNextCard,
                       icon: Icon(Icons.chevron_right),
-                      label: Text('Next')),
+                      label: Text('Next'),
+                      color: Colors.teal,),
                 ],
               )
             ],
