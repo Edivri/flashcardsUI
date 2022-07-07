@@ -19,7 +19,7 @@ class _MyAppState extends State<MyApp> {
         answer: "Dart"),
     Flashcard(question: "Who you gonna call?", answer: "Batman!"),
     Flashcard(
-        question: "Who teaches you how to write sexy code?",
+        question: "Who writes the best code?",
         answer: "Ya boi Za Proqrammer!")
   ];
 
