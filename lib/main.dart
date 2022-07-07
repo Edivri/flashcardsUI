@@ -16,7 +16,7 @@ class _MyAppState extends State<MyApp> {
   List<Flashcard> _flashcards = [
     Flashcard(
         question: "The AppBar BackgroundColor?",
-        answer: "Teal"),
+        answer: "Teal✅"),
     Flashcard(question: "Bat-signal is for?", answer: "Batman🦇!"),
     Flashcard(
         question: "Who writes the best code?", answer: "Ya boi Za Proqrammer!👨🏽‍💻")
