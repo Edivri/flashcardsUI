@@ -36,49 +36,7 @@ class _MyAppState extends State<MyApp> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              OutlinedButton.icon(
-                 onPressed: showNextCard,
-                    icon: Icon(Icons.chevron_right),
-                    label: Text('Next'),
-                    style: OutlinedButton.styleFrom(
-                      shape: StadiumBorder(),
-                      side: BorderSide(
-                        width: 2,
-                        color: Colors.redAccent
-                      )
-                    ),
-                    ),
-              Text("Benjamin"),
-              ClipRRect(
-            borderRadius: BorderRadius.circular(4),
-            child: Stack(
-              children: <Widget>[
-                Positioned.fill(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      gradient: LinearGradient(
-                        colors: <Color>[
-                          Color(0xFF0D47A1),
-                          Color(0xFF1976D2),
-                          Color(0xFF42A5F5),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-                TextButton(
-                  style: TextButton.styleFrom(
-                    padding: const EdgeInsets.all(8.0),
-                    primary: Colors.white,
-                    textStyle: const TextStyle(fontSize: 15),
-                  ),
-                  onPressed: () {},
-                  child: const Text('< Gradient'),
-                ),
-              ],
-            ),
-          ),
-          
+              Text("The Card"),
               SizedBox(
                   width: 250,
                   height: 250,
@@ -92,30 +50,44 @@ class _MyAppState extends State<MyApp> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  OutlineButton.icon(
-                      onPressed: showPreviousCard,
-                      icon: Icon(Icons.chevron_left),
-                      label: Text('Prev')),
-                  OutlineButton.icon(
-                    onPressed: showNextCard,
-                    icon: Icon(Icons.chevron_right),
-                    label: Text('Next'),
-                    color: Colors.teal,
-                  ),
                   TextButton(
-                  style: TextButton.styleFrom(
-                    padding: const EdgeInsets.all(8.0),
-                    primary: Colors.teal,
-                    textStyle: const TextStyle(fontSize: 15),
-                    shape: StadiumBorder(),
-                    side: BorderSide(
-                      width: 2,
-                      color: Colors.teal,
-                    )
+                    style: TextButton.styleFrom(
+                        padding: const EdgeInsets.all(8.0),
+                        primary: Colors.teal,
+                        // backgroundColor: Colors.amber,
+                        textStyle: const TextStyle(fontSize: 15),
+                        shape: StadiumBorder(),
+                        side: BorderSide(
+                          width: 2,
+                          color: Colors.teal,
+                        )),
+                    onPressed: showNextCard,
+                    child: const Text('< Prev'),
                   ),
-                  onPressed: showNextCard,
-                  child: const Text('> Gradient'),
-                ),
+                  // OutlineButton.icon(
+                  //     onPressed: showPreviousCard,
+                  //     icon: Icon(Icons.chevron_left),
+                  //     label: Text('Prev')),
+                  // OutlineButton.icon(
+                  //   onPressed: showNextCard,
+                  //   icon: Icon(Icons.chevron_right),
+                  //   label: Text('Next'),
+                  //   color: Colors.teal,
+                  // ),
+                  TextButton(
+                    style: TextButton.styleFrom(
+                        padding: const EdgeInsets.all(8.0),
+                        primary: Colors.teal,
+                        // backgroundColor: Colors.amber,
+                        textStyle: const TextStyle(fontSize: 15),
+                        shape: StadiumBorder(),
+                        side: BorderSide(
+                          width: 2,
+                          color: Colors.teal,
+                        )),
+                    onPressed: showNextCard,
+                    child: const Text('> Next'),
+                  ),
                 ],
               )
             ],
