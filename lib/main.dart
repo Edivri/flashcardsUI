@@ -14,12 +14,11 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   List<Flashcard> _flashcards = [
-    Flashcard(
-        question: "The AppBar BackgroundColor?",
-        answer: "Teal✅"),
+    Flashcard(question: "The AppBar BackgroundColor?", answer: "Teal✅"),
     Flashcard(question: "Bat-signal is for?", answer: "Batman🦇!"),
     Flashcard(
-        question: "Who writes the best code?", answer: "Ya boi Za Proqrammer!👨🏽‍💻")
+        question: "Who writes the best code?",
+        answer: "Ya boi Za Proqrammer!👨🏽‍💻")
   ];
 
   int _currentIndex = 0;
@@ -37,6 +36,49 @@ class _MyAppState extends State<MyApp> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              OutlinedButton.icon(
+                 onPressed: showNextCard,
+                    icon: Icon(Icons.chevron_right),
+                    label: Text('Next'),
+                    style: OutlinedButton.styleFrom(
+                      shape: StadiumBorder(),
+                      side: BorderSide(
+                        width: 2,
+                        color: Colors.redAccent
+                      )
+                    ),
+                    ),
+              Text("Benjamin"),
+              ClipRRect(
+            borderRadius: BorderRadius.circular(4),
+            child: Stack(
+              children: <Widget>[
+                Positioned.fill(
+                  child: Container(
+                    decoration: const BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: <Color>[
+                          Color(0xFF0D47A1),
+                          Color(0xFF1976D2),
+                          Color(0xFF42A5F5),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                TextButton(
+                  style: TextButton.styleFrom(
+                    padding: const EdgeInsets.all(8.0),
+                    primary: Colors.white,
+                    textStyle: const TextStyle(fontSize: 15),
+                  ),
+                  onPressed: () {},
+                  child: const Text('< Gradient'),
+                ),
+              ],
+            ),
+          ),
+          
               SizedBox(
                   width: 250,
                   height: 250,
@@ -55,10 +97,25 @@ class _MyAppState extends State<MyApp> {
                       icon: Icon(Icons.chevron_left),
                       label: Text('Prev')),
                   OutlineButton.icon(
-                      onPressed: showNextCard,
-                      icon: Icon(Icons.chevron_right),
-                      label: Text('Next'),
-                      color: Colors.teal,),
+                    onPressed: showNextCard,
+                    icon: Icon(Icons.chevron_right),
+                    label: Text('Next'),
+                    color: Colors.teal,
+                  ),
+                  TextButton(
+                  style: TextButton.styleFrom(
+                    padding: const EdgeInsets.all(8.0),
+                    primary: Colors.teal,
+                    textStyle: const TextStyle(fontSize: 15),
+                    shape: StadiumBorder(),
+                    side: BorderSide(
+                      width: 2,
+                      color: Colors.teal,
+                    )
+                  ),
+                  onPressed: showNextCard,
+                  child: const Text('> Gradient'),
+                ),
                 ],
               )
             ],
