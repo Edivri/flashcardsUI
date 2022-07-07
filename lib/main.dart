@@ -17,10 +17,10 @@ class _MyAppState extends State<MyApp> {
     Flashcard(
         question: "What programming language does Flutter use?",
         answer: "Dart"),
-    Flashcard(question: "Who you gonna call?", answer: "Ghostbusters!"),
+    Flashcard(question: "Who you gonna call?", answer: "Batman!"),
     Flashcard(
         question: "Who teaches you how to write sexy code?",
-        answer: "Ya boi Kilo Loco!")
+        answer: "Ya boi Za Proqrammer!")
   ];
 
   int _currentIndex = 0;
