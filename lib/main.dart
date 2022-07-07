@@ -36,7 +36,7 @@ class _MyAppState extends State<MyApp> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("The Card"),
+              Text("The Cards"),
               SizedBox(
                   width: 250,
                   height: 250,
@@ -47,12 +47,13 @@ class _MyAppState extends State<MyApp> {
                       back: FlashcardView(
                         text: _flashcards[_currentIndex].answer,
                       ))),
+                      Divider(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   TextButton(
                     style: TextButton.styleFrom(
-                        padding: const EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(8.0 * 2),
                         primary: Colors.teal,
                         // backgroundColor: Colors.amber,
                         textStyle: const TextStyle(fontSize: 15),
@@ -64,6 +65,7 @@ class _MyAppState extends State<MyApp> {
                     onPressed: showNextCard,
                     child: const Text('< Prev'),
                   ),
+                  
                   // OutlineButton.icon(
                   //     onPressed: showPreviousCard,
                   //     icon: Icon(Icons.chevron_left),
@@ -76,7 +78,7 @@ class _MyAppState extends State<MyApp> {
                   // ),
                   TextButton(
                     style: TextButton.styleFrom(
-                        padding: const EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(16.0),
                         primary: Colors.teal,
                         // backgroundColor: Colors.amber,
                         textStyle: const TextStyle(fontSize: 15),
@@ -86,7 +88,7 @@ class _MyAppState extends State<MyApp> {
                           color: Colors.teal,
                         )),
                     onPressed: showNextCard,
-                    child: const Text('> Next'),
+                    child: const Text('Next >'),
                   ),
                 ],
               )
