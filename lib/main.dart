@@ -41,6 +41,8 @@ class _MyAppState extends State<MyApp> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Text("MINI-PROJECT TO PLAY WITH THE UPDATED BUTTONS"),
+              Divider(),
               Text("The Cards"),
               SizedBox(
                   width: 250,
