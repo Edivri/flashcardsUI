@@ -63,7 +63,7 @@ class _MyAppState extends State<MyApp> {
                           color: Colors.teal,
                         )),
                     onPressed: showNextCard,
-                    child: const Text('< Prev'),
+                    child: const Text('⬅️ Prev'),
                   ),
                   
                   // OutlineButton.icon(
@@ -88,7 +88,7 @@ class _MyAppState extends State<MyApp> {
                           color: Colors.teal,
                         )),
                     onPressed: showNextCard,
-                    child: const Text('Next >'),
+                    child: const Text('Next ➡️'),
                   ),
                 ],
               )
