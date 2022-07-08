@@ -49,7 +49,7 @@ class _MyAppState extends State<MyApp> {
                       front: FlashcardView(
                         text: _flashcards[_currentIndex].question,
                       ),
-                      back: FlashcardView(
+                      back: BackcardView(
                         text: _flashcards[_currentIndex].answer,
                       ))),
                       Divider(),
