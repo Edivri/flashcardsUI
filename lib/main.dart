@@ -18,7 +18,11 @@ class _MyAppState extends State<MyApp> {
     Flashcard(question: "Bat-signal is for?", answer: "Batman🦇!"),
     Flashcard(
         question: "Who writes the best code?",
-        answer: "Ya boi Za Proqrammer!👨🏽‍💻")
+        answer: "Ya boi Za Proqrammer!👨🏽‍💻"),
+        Flashcard(question: "Another name for object function?", answer: "method"),
+        Flashcard(question: "What are mixins?", answer: "Mixins are a language concept that allows a programmer to inject some code into a class"),
+        Flashcard(question: "What is polymorphism?", answer: "Polymorphism is the ability of an object to take on many forms."),
+        Flashcard(question: "What is encapsulation?", answer: "encapsulation refers to the bundling of data with the methods that operate on that data, or the restricting of direct access to some of an object's components.")
   ];
 
   int _currentIndex = 0;
